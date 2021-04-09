@@ -1,0 +1,136 @@
+.main-header {
+    padding: 50px 15px 50px 15px;
+    position: relative;
+
+}
+
+.header-logo {
+    font-size: 32px;
+    float: left;
+}
+
+.header-logo img {
+    width: 43px;
+    height: 38px;
+}
+
+.hello-message {
+    display: flex;
+    flex-flow: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.hello-message .hello {
+    margin-right: 10px;
+    color: #242321;
+}
+
+.hello-message .username {
+    margin-right: 10px;
+    color: #0d71bb;
+}
+
+.hello-message .login-button {
+    margin-right: 10px;
+}
+
+.portfolio-container {
+    display: flex;
+    color: #242321;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.portfolio-title-holder {
+    display: flex;
+    flex-flow: column;
+    align-items: left;
+
+}
+
+.portfolio-title {
+    margin-top: 20px;
+    font-size: 26px;
+}
+
+.portfolio-content {
+    margin-top: 20px;
+    color: #666;
+    line-height: 26px;
+}
+
+.portfolio-menu {
+    display: flex;
+    flex-flow: row;
+    line-height: 26px;
+}
+
+.portfolio-menu .item {
+    color: #666;
+
+}
+
+
+@media (max-width: 620px) {
+    .App {
+        padding: 5px;
+    }
+    .portfolio-container {
+        flex-flow: column;
+        align-items: flex-start;
+    }
+    .portfolio-menu {
+        margin-top: 30px;
+        justify-content: flex-start;
+    }
+    .portfolio-menu .item {
+        margin-right: 10px;
+        font-size: 14px;
+    }
+
+}
+
+@media (min-width: 830px) {
+    .App {
+        padding: 10px;
+    }
+
+    .portfolio-container {
+        flex-flow: row;
+        align-items: flex-end;
+        justify-content: space-between;
+    }
+    .portfolio-menu {
+        justify-content: flex-end;
+    }
+    .portfolio-menu .item {
+        margin-left: 20px;
+        font-size: 16px;
+    }
+
+    .wrapper {
+        margin-left: auto;
+        margin-right: auto;
+        width: 1170px;
+    }
+}
+
+.footer {
+    background-color: #eee;
+    display: flex;
+    flex-flow: column;
+    margin-top: 30px;
+    padding: 40px 0 40px 0;
+    font-size: 15px;
+    color: #898989;
+}
+
+.footer .copyright {
+    margin-top: 40px;
+    text-align: center;
+}
