@@ -8,6 +8,7 @@ import {Route, Router, Switch} from "react-router";
 import Posts from "./components/Posts";
 import {createBrowserHistory} from "history";
 import Header from "./components/Header";
+import Projects from "./components/Projects";
 
 const history = createBrowserHistory();
 
@@ -19,7 +20,9 @@ function App() {
                 <Header/>
                 <Switch>
                     <Route path='' exact component={Home} />
-                    <Route path='/posts' component={Posts} />
+                    <Route path='/projects' component={Projects} />
+                    <Route path='/lifestyles' component={Posts} />
+                    <Route path='/about' component={Posts} />
                 </Switch>
             </div>
         </Router>

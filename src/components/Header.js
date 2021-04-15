@@ -62,13 +62,13 @@ function Header({currentUser}){
                         <Link to="/">Home</Link>
                     </div>
                     <div className="item">
-                        <Link to="/tags?name=projects">Projects</Link>
+                        <Link to="/projects">Projects</Link>
                     </div>
                     <div className="item">
-                        <Link to="/tags?name=news">LifeStyles</Link>
+                        <Link to="/lifestyles">LifeStyles</Link>
                     </div>
                     <div className="item">
-                        <Link to="/tags?name=myCV">About</Link>
+                        <Link to="/about">About</Link>
                     </div>
                 </div>
             </div>

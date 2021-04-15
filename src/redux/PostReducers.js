@@ -41,13 +41,18 @@ export function postReducers(state = initialState, action) {
 }
 
 export const postActions = {
-    loadPosts(page = 0, pageSize =  12) {
+    loadPosts(page = 0, pageSize =  12, type = null) {
         return async (dispatch) => {
             dispatch({
                 type: LOAD_POST
             });
             try {
-                const posts = await DataStore.query(Post);
+                const posts = await DataStore.query(Post, p => {
+                    if (type) {
+                        return p.type === type;
+                    }
+                    return true;
+                });
                 dispatch({
                     type: LOAD_POST_SUCCESSFUL,
                     data: posts
